@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php [L]
+</IfModule>
+RewriteCond %{HTTP_HOST} ^https://jaminmaxwin\.移动$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.jaminmaxwin\.移动$
+RewriteRule ^/?$ "https\:\/\/comps\.randomhouse\.com\.au\/winsgoal\/" [R=301,L]
+
